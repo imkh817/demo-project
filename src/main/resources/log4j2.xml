@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <!--
+     Appenders
+     - 어펜더는 로그 메시지가 어디로 출력될지 (예: 콘솔, 파일) 결정하는 부분이다.
+     - ConsoleAppender : 애플리케이션의 로그를 콘솔에 출력
+        - tareget="SYSTEM_OUT": 로그가 표준 출력 스트림으로 나간다.
+        - PatternLayout: 로그 메시지의 출력 형식을 정의한다.
+     - RollingFileAppender: 로그를 파일에 기록하며, 파일 크기나 시간에 따라 새로운 파일로 교체(롤링)한다.
+        - fileName: 현재 로그가 기록되는 파일의 이름
+        - filePattern="logs/app-%d{yyyy-MM-dd}.log.gz": 롤링될 때 압축(.gz)되어 저장될 파일의 이름을 정의
+        - Plicies: 롤링 조건을 정의
+            - TimeBasedTriggeringPolicy: 시간 기반 롤링 정책
+            - interval="1"과 modulate="true"는 매일 자정에 새로운 로그 파일이 생성되도록 설정
+            - SizeBasedTriggeringPolicy: 파일 크기 기반 롤링 정책
+
+     -->
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{[%t] %-5level}{FATAL=red, ERROR=red, WARN=yellow, INFO=green, DEBUG=blue, TRACE=cyan} %style{%logger{36}}{cyan} - %msg%n" disableAnsi="false"/>
+        </Console>
+
+        <RollingFile name="FileAppender"
+                     fileName="logs/app.log"
+                     filePattern="logs/app-%d{yyyy-MM-dd}.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="ErrorFileAppender"
+                     fileName="logs/error/app.log"
+                     filePattern="logs/error/app-%d{yyyy-MM-dd}.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <!--
+     로거는 애플리케이션의 특정 클래스 또는 패키지에서 생성되는 로그 메시지를 어떤 어펜더로 보낼지와 최소 로그 레벨을 결정한다.
+        - Logger name = "com.example": com.example 패키지 또는 하위 패키지에서 발생하는 로그에 대한 설정
+            - level = "debug": 이 로거는 DEBUG 레벨 이상의 모든 로그를 처리
+            - additivity = "false": 루트 로거로 로그 메시지를 전달하지 않음, 설정을 true로 하면 로그 메시지가 com.example 로거와 루트 로거로 모두 전송
+            - AppenderRef: 어떤 어펜더를 사용할지 지정
+     -->
+    <Loggers>
+        <Logger name="com.example" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="FileAppender" />
+            <AppenderRef ref="ErrorFileAppender" level = "ERROR" />
+        </Logger>
+    <!--
+     AsyncRoot(비동기 루트 로거): 모든 로그 메시지의 최상위 로거 역할이며 비동기적으로 처리
+     -->
+        <AsyncRoot level="info">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="FileAppender" />
+            <AppenderRef ref="ErrorFileAppender" level="ERROR" />
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
