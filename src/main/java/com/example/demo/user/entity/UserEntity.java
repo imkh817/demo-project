@@ -1,6 +1,6 @@
-package com.example.demo.security.entity;
+package com.example.demo.user.entity;
 
-import com.example.demo.security.enums.RoleType;
+import com.example.demo.user.enums.RoleType;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

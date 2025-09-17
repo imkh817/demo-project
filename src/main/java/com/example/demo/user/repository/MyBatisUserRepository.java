@@ -1,6 +1,6 @@
-package com.example.demo.security.repository;
+package com.example.demo.user.repository;
 
-import com.example.demo.security.entity.UserEntity;
+import com.example.demo.user.entity.UserEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;

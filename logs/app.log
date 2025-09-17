@@ -1,443 +1,163 @@
-2025-09-16 15:19:54.354 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 15:19:54.980 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 57300 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 15:19:54.983 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 15:19:54.984 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 15:19:55.756 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 15:19:56.106 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 15:19:56.122 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:19:56.124 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 15:19:56.125 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 15:19:56.179 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 15:19:56.179 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1120 ms
-2025-09-16 15:19:56.680 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:19:56.697 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 15:19:56.705 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.214 seconds (process running for 3.538)
-2025-09-16 15:19:56.708 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 15:20:01.236 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-09-16 15:20:01.236 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-09-16 15:20:01.238 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2025-09-16 15:46:57.999 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 15:46:58.022 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 15:50:17.033 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 15:50:18.010 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 62992 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 15:50:18.015 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 15:50:18.016 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 15:50:20.950 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 3.734 seconds (process running for 6.009)
-2025-09-16 15:50:20.954 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 15:55:08.137 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 15:55:09.007 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 10268 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 15:55:09.013 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 15:55:09.015 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 15:55:10.354 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 15:55:11.344 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 15:55:11.428 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:55:11.438 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 15:55:11.440 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 15:55:11.582 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 15:55:11.583 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2472 ms
-2025-09-16 15:55:16.867 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:55:16.983 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 8.71 seconds (process running for 10.38)
-2025-09-16 15:55:16.901 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 15:55:18.237 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 15:55:38.876 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 15:55:38.884 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 15:55:51.657 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 15:55:52.576 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 14564 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 15:55:52.582 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 15:55:52.583 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 15:55:53.655 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 15:55:54.094 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 15:55:54.121 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:55:54.124 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 15:55:54.125 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 15:55:54.206 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 15:55:54.206 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1525 ms
-2025-09-16 15:55:54.820 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:55:54.867 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 15:55:54.882 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.977 seconds (process running for 4.509)
-2025-09-16 15:55:54.887 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 15:56:23.323 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-09-16 15:56:23.323 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-09-16 15:56:23.326 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-09-16 15:57:40.842 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 15:57:40.848 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 15:57:46.865 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 15:57:47.998 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 60424 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 15:57:48.004 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 15:57:48.006 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 15:57:49.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 15:57:50.285 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 15:57:50.308 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:57:50.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 15:57:50.312 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 15:57:50.383 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 15:57:50.384 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2272 ms
-2025-09-16 15:57:51.196 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:57:51.233 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 15:57:51.256 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 4.199 seconds (process running for 6.308)
-2025-09-16 15:57:51.261 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 15:58:12.777 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 15:58:12.788 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 15:58:19.249 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 15:58:20.084 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 45692 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 15:58:20.089 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 15:58:20.091 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 15:58:21.343 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 15:58:21.952 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 15:58:21.985 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:58:21.990 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 15:58:21.990 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 15:58:22.091 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 15:58:22.091 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1891 ms
-2025-09-16 15:58:22.954 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 15:58:22.989 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 15:58:23.004 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 3.621 seconds (process running for 5.595)
-2025-09-16 15:58:23.008 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 15:59:50.423 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 15:59:50.427 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:00:00.027 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:00:01.386 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 18960 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:00:01.390 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:00:01.392 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:00:02.412 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:00:02.923 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:00:02.950 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:00:02.953 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:00:02.954 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:00:03.045 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:00:03.045 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1591 ms
-2025-09-16 16:00:03.727 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:00:03.757 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:00:03.772 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 3.4 seconds (process running for 6.14)
-2025-09-16 16:00:03.776 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:26:25.614 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:26:25.627 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:26:31.461 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:26:32.378 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 8172 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:26:32.382 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:26:32.384 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:26:33.475 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:26:33.864 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:26:33.891 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:26:33.895 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:26:33.896 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:26:33.975 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:26:33.976 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1446 ms
-2025-09-16 16:26:34.783 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:26:34.804 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:26:34.814 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 3.215 seconds (process running for 5.074)
-2025-09-16 16:26:34.817 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:27:41.333 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:27:41.344 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:27:44.339 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:27:44.764 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 53516 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:27:44.767 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:27:44.768 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:27:45.426 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:27:45.670 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:27:45.683 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:27:45.684 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:27:45.686 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:27:45.725 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:27:45.725 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 874 ms
-2025-09-16 16:27:46.116 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:27:46.134 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:27:46.143 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.707 seconds (process running for 2.749)
-2025-09-16 16:27:46.150 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:27:51.062 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:27:51.067 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:27:55.269 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:27:55.722 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 54944 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:27:55.725 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:27:55.726 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:27:56.352 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:27:56.565 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:27:56.577 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:27:56.578 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:27:56.579 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:27:56.620 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:27:56.620 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 828 ms
-2025-09-16 16:27:57.013 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:27:57.036 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:27:57.048 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.708 seconds (process running for 2.731)
-2025-09-16 16:27:57.051 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:29:11.280 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:29:11.293 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:29:14.054 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:29:14.579 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 58488 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:29:14.581 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:29:14.582 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:29:15.217 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:29:15.575 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:29:15.589 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:29:15.591 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:29:15.591 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:29:15.635 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:29:15.635 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1000 ms
-2025-09-16 16:29:16.126 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:29:16.148 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:29:16.157 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.018 seconds (process running for 3.221)
-2025-09-16 16:29:16.162 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:32:19.997 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:32:20.014 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:32:26.315 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:32:26.846 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 50208 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:32:26.849 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:32:26.850 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:32:27.566 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:32:27.843 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:32:27.858 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:32:27.859 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:32:27.860 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:32:27.904 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:32:27.904 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 995 ms
-2025-09-16 16:32:28.410 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:32:28.432 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:32:28.443 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.03 seconds (process running for 3.842)
-2025-09-16 16:32:28.446 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:32:44.726 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:32:44.731 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:32:49.732 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:32:50.212 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 45896 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:32:50.215 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:32:50.216 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:32:50.974 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:32:51.318 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:32:51.343 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:32:51.351 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:32:51.352 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:32:51.443 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:32:51.443 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1155 ms
-2025-09-16 16:32:52.056 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:32:52.081 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:32:52.093 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.275 seconds (process running for 3.489)
-2025-09-16 16:32:52.097 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:34:11.824 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:34:11.829 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:34:15.397 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:34:15.976 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 64384 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:34:15.978 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:34:15.979 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:34:16.609 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:34:17.000 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:34:17.019 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:34:17.022 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:34:17.023 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:34:17.077 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:34:17.077 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1046 ms
-2025-09-16 16:34:17.694 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:34:17.767 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:34:17.783 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.292 seconds (process running for 3.855)
-2025-09-16 16:34:17.787 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:43:42.456 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:43:42.480 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:43:47.565 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:43:48.276 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 64288 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:43:48.281 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:43:48.282 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:43:49.689 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:43:50.150 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:43:50.174 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:43:50.177 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:43:50.177 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:43:50.249 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:43:50.249 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1876 ms
-2025-09-16 16:43:50.913 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:43:50.935 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:43:50.956 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 3.239 seconds (process running for 4.918)
-2025-09-16 16:43:50.961 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:44:20.788 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-09-16 16:44:20.788 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-09-16 16:44:20.790 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-09-16 16:45:48.416 [http-nio-8080-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 에러를 남깁니다.] with root cause
-java.lang.IllegalArgumentException: 에러를 남깁니다.
-	at com.example.demo.LogController.error(LogController.java:13) ~[classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.44.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.44.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2025-09-16 16:50:20.556 [http-nio-8080-exec-10] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 에러를 남깁니다.] with root cause
-java.lang.IllegalArgumentException: 에러를 남깁니다.
-	at com.example.demo.LogController.error(LogController.java:13) ~[classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.44.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.44.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2025-09-16 16:50:35.175 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 16:50:35.183 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 16:50:39.841 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 16:50:40.537 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 63228 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 16:50:40.540 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 16:50:40.540 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 16:50:41.257 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 16:50:41.507 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 16:50:41.519 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:50:41.521 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 16:50:41.521 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 16:50:41.560 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 16:50:41.560 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 955 ms
-2025-09-16 16:50:42.008 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 16:50:42.029 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 16:50:42.037 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.04 seconds (process running for 4.27)
-2025-09-16 16:50:42.042 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 16:50:46.202 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-09-16 16:50:46.203 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-09-16 16:50:46.204 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-09-16 16:50:46.236 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: 에러를 남깁니다.] with root cause
-java.lang.IllegalArgumentException: 에러를 남깁니다.
-	at com.example.demo.LogController.error(LogController.java:13) ~[classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.44.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.10.jar:6.2.10]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.44.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2025-09-16 17:02:37.898 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 17:02:37.911 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-09-16 17:02:45.174 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
-2025-09-16 17:02:45.727 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 43744 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
-2025-09-16 17:02:45.730 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-09-16 17:02:45.732 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-09-16 17:02:46.481 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2025-09-16 17:02:46.917 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-09-16 17:02:46.939 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-09-16 17:02:46.941 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-09-16 17:02:46.941 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-16 17:02:47.008 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-09-16 17:02:47.008 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1205 ms
-2025-09-16 17:02:47.428 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-09-16 17:02:47.441 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-09-16 17:02:47.446 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.182 seconds (process running for 3.537)
-2025-09-16 17:02:47.448 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
-2025-09-16 17:02:55.236 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-16 17:02:55.244 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 09:27:44.495 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
+2025-09-17 09:27:44.916 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 9996 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
+2025-09-17 09:27:44.919 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-17 09:27:44.919 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 09:27:45.523 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-17 09:27:45.753 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 09:27:45.766 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 09:27:45.767 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 09:27:45.767 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 09:27:45.810 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 09:27:45.810 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 835 ms
+2025-09-17 09:27:46.189 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 09:27:46.209 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 09:27:46.219 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.644 seconds (process running for 2.753)
+2025-09-17 09:27:46.222 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
+2025-09-17 09:28:00.307 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-17 09:28:00.308 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-17 09:28:00.309 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-09-17 09:28:05.344 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 09:28:05.349 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 09:29:22.359 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
+2025-09-17 09:29:22.744 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 9152 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
+2025-09-17 09:29:22.746 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-17 09:29:22.746 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 09:29:23.331 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-17 09:29:23.550 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 09:29:23.562 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 09:29:23.563 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 09:29:23.563 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 09:29:23.605 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 09:29:23.605 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 794 ms
+2025-09-17 09:29:23.960 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 09:29:23.979 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 09:29:23.987 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.57 seconds (process running for 2.513)
+2025-09-17 09:29:23.989 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
+2025-09-17 09:29:25.403 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 09:29:25.408 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 10:06:24.993 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
+2025-09-17 10:06:25.406 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 1916 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
+2025-09-17 10:06:25.409 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-17 10:06:25.409 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 10:06:26.017 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-17 10:06:26.252 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 10:06:26.264 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:06:26.265 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 10:06:26.266 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 10:06:26.306 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 10:06:26.306 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+2025-09-17 10:06:26.750 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ac6f375b-ebfd-4441-842f-975e1e586565
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-17 10:06:26.757 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-17 10:06:26.867 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:06:26.880 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 10:06:26.886 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.822 seconds (process running for 2.821)
+2025-09-17 10:06:26.888 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
+2025-09-17 10:07:51.448 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 10:07:51.453 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 10:07:53.834 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
+2025-09-17 10:07:54.192 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 18496 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
+2025-09-17 10:07:54.194 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-17 10:07:54.195 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 10:07:54.743 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-17 10:07:54.960 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 10:07:54.971 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:07:54.972 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 10:07:54.972 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 10:07:55.010 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 10:07:55.010 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 770 ms
+2025-09-17 10:07:55.383 [main] TRACE org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer - Eagerly initializing {org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration=org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration@5463f035}
+2025-09-17 10:07:55.385 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9b9d98b3-2351-43d7-9d63-ff081c24d998
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-17 10:07:55.390 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-17 10:07:55.448 [main] DEBUG org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, DefaultResourcesFilter, DefaultLoginPageGeneratingFilter, DefaultLogoutPageGeneratingFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-17 10:07:55.486 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:07:55.499 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 10:07:55.506 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.615 seconds (process running for 2.541)
+2025-09-17 10:07:55.507 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
+2025-09-17 10:09:29.177 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 10:09:29.181 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 10:09:31.740 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
+2025-09-17 10:09:32.106 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 12708 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
+2025-09-17 10:09:32.108 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-17 10:09:32.109 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 10:09:32.687 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-17 10:09:32.911 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 10:09:32.924 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:09:32.925 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 10:09:32.925 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 10:09:32.962 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 10:09:32.962 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 801 ms
+2025-09-17 10:09:33.348 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: db0419da-7fb1-4aca-8d92-ebda6065e63f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-17 10:09:33.456 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:09:33.469 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 10:09:33.475 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.675 seconds (process running for 2.704)
+2025-09-17 10:09:33.476 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
+2025-09-17 10:10:44.888 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-17 10:10:44.888 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-17 10:10:44.889 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-17 10:13:59.764 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 10:13:59.768 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 10:14:02.360 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
+2025-09-17 10:14:02.734 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 10780 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
+2025-09-17 10:14:02.736 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-17 10:14:02.736 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 10:14:03.338 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-17 10:14:03.575 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 10:14:03.588 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:14:03.589 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 10:14:03.590 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 10:14:03.630 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 10:14:03.630 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 844 ms
+2025-09-17 10:14:04.007 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f7f681d0-2695-4cc4-b4a4-202a07370e24
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-17 10:14:04.113 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:14:04.127 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 10:14:04.133 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.715 seconds (process running for 2.773)
+2025-09-17 10:14:04.135 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
+2025-09-17 10:14:11.165 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-17 10:14:11.166 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-17 10:14:11.166 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-09-17 10:14:35.416 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 10:14:35.428 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 10:14:37.707 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
+2025-09-17 10:14:38.101 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 19120 (C:\Users\iit\Desktop\project\demo\out\production\classes started by iit in C:\Users\iit\Desktop\project\demo)
+2025-09-17 10:14:38.103 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-17 10:14:38.104 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 10:14:38.716 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-17 10:14:38.937 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 10:14:38.949 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:14:38.950 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 10:14:38.950 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 10:14:38.990 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 10:14:38.990 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 830 ms
+2025-09-17 10:14:39.382 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3391ab71-d3d6-4918-8469-05c986cbf934
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-17 10:14:39.494 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 10:14:39.507 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 10:14:39.514 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.744 seconds (process running for 2.833)
+2025-09-17 10:14:39.516 [main] INFO  com.example.demo.DemoApplication - SuccessOpenApplication!!!
+2025-09-17 10:14:42.331 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-17 10:14:42.331 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-17 10:14:42.332 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms

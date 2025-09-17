@@ -55,12 +55,9 @@
             <AppenderRef ref="ErrorFileAppender" level = "ERROR" />
         </Logger>
 
-        <!-- 시큐리티 Filter 디버깅시 활용 -->
-        <!--
-         <Logger name="org.springframework.security" level="trace" additivity="false">
+        <Logger name="org.springframework.security" level="trace" additivity="false">
             <AppenderRef ref="ConsoleAppender" />
         </Logger>
-        -->
     <!--
      AsyncRoot(비동기 루트 로거): 모든 로그 메시지의 최상위 로거 역할이며 비동기적으로 처리
      -->

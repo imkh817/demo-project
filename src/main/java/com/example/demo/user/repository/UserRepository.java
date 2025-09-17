@@ -1,14 +1,12 @@
-package com.example.demo.security.repository;
+package com.example.demo.user.repository;
 
-import com.example.demo.security.entity.UserEntity;
+import com.example.demo.user.entity.UserEntity;
 
 import java.util.Optional;
 
+// UserService -> UserRepository <- MyBatisRepository, JpaRepository
 public interface UserRepository {
-
     public Optional<UserEntity> findByUserId(String username);
 }
 
-// UserService -> UserRepository <- MyBatisRepository
-// myBatis JPA
-//
+
