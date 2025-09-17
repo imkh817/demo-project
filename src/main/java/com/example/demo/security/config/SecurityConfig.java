@@ -1,5 +1,8 @@
 package com.example.demo.security.config;
 
+import com.example.demo.security.filter.JwtAuthenticationFilter;
+import com.example.demo.user.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.security.reactive.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,15 +21,20 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
+@RequiredArgsConstructor
 public class SecurityConfig {
+
+    private final UserRepository userRepository;
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .httpBasic(Customizer.withDefaults())
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests((authorize) -> authorize
@@ -34,7 +42,8 @@ public class SecurityConfig {
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .requestMatchers("/api/customer/**").hasRole("CUSTOMER")
                         .requestMatchers("/api/employee/**").hasRole("EMPLOYEE")
-                        .anyRequest().authenticated());
+                        .anyRequest().authenticated())
+                        .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class) ;
 
         return http.build();
     }
@@ -48,11 +57,12 @@ public class SecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        UserDetails user = User.withUsername("user")
-                .password("password")
-                .roles("USER")
+        UserDetails user = User.withUsername("kunhee")
+                .password(passwordEncoder().encode("12345"))
+                .authorities("ROLE_ADMIN")
                 .build();
         return new InMemoryUserDetailsManager(user);
+        //return new CustomUserDetailsService(userRepository);
     }
 
     @Bean

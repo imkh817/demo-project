@@ -17,4 +17,6 @@ public class LogController {
     public String normal() {
         return "normal";
     }
+
+
 }

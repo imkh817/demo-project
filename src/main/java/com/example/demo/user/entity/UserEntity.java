@@ -12,12 +12,9 @@ public class UserEntity {
     private String password;
     private boolean accountNonLocked  = true;
     private RoleType roleType;
-
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private LocalDateTime lastLoginAt;
-
-    // 탈퇴 여부
     private boolean deleted = false;
     private LocalDateTime deletedAt;
 }
