@@ -161,6 +161,8 @@ This generated password is for development use only. Your security configuration
 2025-09-17 10:14:42.331 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-09-17 10:14:42.331 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2025-09-17 10:14:42.332 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-17 18:01:47.740 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 18:01:47.764 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
 2025-09-17 21:31:45.557 [main] INFO  com.example.demo.DemoApplication - startApplication!!!
 2025-09-17 21:31:45.832 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.7 with PID 80058 (/Users/jogeonhui/Desktop/toy-project/demo-project/out/production/classes started by jogeonhui in /Users/jogeonhui/Desktop/toy-project/demo-project)
 2025-09-17 21:31:45.834 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.5, Spring v6.2.10

@@ -1,8 +1,15 @@
 package com.example.demo.security.jwt;
 
+import com.example.demo.auth.enums.TokenType;
+import com.example.demo.security.exception.ExpiredJwtTokenException;
+import com.example.demo.security.exception.InvalidJwtTokenException;
+import com.example.demo.security.exception.JwtAuthenticationException;
+import com.example.demo.security.exception.UnsupportedJwtException;
 import io.jsonwebtoken.*;
+import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -10,10 +17,13 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.example.demo.auth.enums.ErrorCode.*;
 
 @Slf4j
 @Component
@@ -21,7 +31,11 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class JwtTokenProvider {
 
-    private SecretKey key;
+    @Value("${jwt.accessKey}")
+    private String accessKey;
+    @Value("${jwt.refreshKey}")
+    private String refreshKey;
+    @Value("${jwt.jwtExpirationInMs}")
     private long jwtExpirationInMs;
 
     // JWT 토큰 생성
@@ -32,19 +46,40 @@ public class JwtTokenProvider {
                 .collect(Collectors.joining(","));
 
         Date issueDate = new Date(System.currentTimeMillis());
+        Date expiryDate = new Date(issueDate.getTime() + jwtExpirationInMs);
 
         return Jwts.builder()
                 .setSubject(name)
                 .claim("authorities", authorities)
                 .setIssuedAt(issueDate)
-                .signWith(key, SignatureAlgorithm.HS512)
+                .setExpiration(expiryDate)
+                .signWith(getSigningKey(TokenType.ACCESS))
+                .compact();
+    }
+
+    // JWT 토큰 생성
+    public String generateRefreshToken(Authentication authentication){
+        String name = authentication.getName();
+        String authorities = authentication.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .collect(Collectors.joining(","));
+
+        Date issueDate = new Date(System.currentTimeMillis());
+        Date expiryDate = new Date(issueDate.getTime() + jwtExpirationInMs * 7); // 리프레시 토큰은 7배 더 길게
+
+        return Jwts.builder()
+                .setSubject(name)
+                .claim("authorities", authorities)
+                .setIssuedAt(issueDate)
+                .setExpiration(expiryDate)
+                .signWith(getSigningKey(TokenType.REFRESH))
                 .compact();
     }
 
     // JWT 토큰에서 사용자명 추출
-    public String getUsernameFromJWT(String token){
+    public String getUsernameFromJWT(String token, TokenType tokenType) {
         Claims claims = Jwts.parserBuilder()
-                .setSigningKey(key)
+                .setSigningKey(getSigningKey(tokenType))
                 .build()
                 .parseClaimsJws(token)
                 .getBody();
@@ -53,9 +88,9 @@ public class JwtTokenProvider {
     }
 
     // JWT 토큰에서 권한 추출
-    public List<SimpleGrantedAuthority> getAuthoritiesFromJWT(String token){
+    public List<SimpleGrantedAuthority> getAuthoritiesFromJWT(String token, TokenType tokenType) {
         String authorities = Jwts.parserBuilder()
-                .setSigningKey(key)
+                .setSigningKey(getSigningKey(tokenType))
                 .build()
                 .parseClaimsJws(token)
                 .getBody()
@@ -68,25 +103,29 @@ public class JwtTokenProvider {
     }
 
     // JWT 토큰 유효성 검증
-    public boolean validateToken(String authToken){
+    public boolean validateToken(String authToken, TokenType tokenType){
         try{
             Jwts.parserBuilder()
-                    .setSigningKey(key)
+                    .setSigningKey(getSigningKey(tokenType))
                     .build()
                     .parseClaimsJws(authToken);
             return true;
         }catch (MalformedJwtException ex) {
-            log.error("잘못된 JWT 토큰");
+            throw new InvalidJwtTokenException();
         } catch (ExpiredJwtException ex) {
-            log.error("만료된 JWT 토큰");
+            throw new ExpiredJwtTokenException();
         } catch (UnsupportedJwtException ex) {
-            log.error("지원되지 않는 JWT 토큰");
+            throw new UnsupportedJwtException();
         } catch (IllegalArgumentException ex) {
-            log.error("JWT 클레임이 비어있음");
+            throw new InvalidJwtTokenException();
         } catch (JwtException ex) {
-            log.error("JWT 토큰 검증 실패");
+            throw new JwtAuthenticationException();
         }
-        return false;
+    }
+
+    private SecretKey getSigningKey(TokenType tokenType) {
+        String secret = (tokenType == TokenType.ACCESS) ? accessKey : refreshKey;
+        return Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
     }
 
 
