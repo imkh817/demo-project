@@ -1,7 +1,6 @@
 package com.example.demo.exception.dto;
 
-import com.example.demo.auth.enums.ErrorCode;
-import lombok.Builder;
+import com.example.demo.auth.enums.AuthErrorType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,10 +13,10 @@ public class ErrorResponseDto {
     private String message;
     private LocalDateTime timestamp;
 
-    public ErrorResponseDto(ErrorCode errorCode) {
-        this.code = errorCode.getCode().value();
-        this.subCode = errorCode.name();
-        this.message = errorCode.getMessage();
+    public ErrorResponseDto(AuthErrorType authErrorType) {
+        this.code = authErrorType.getCode().value();
+        this.subCode = authErrorType.name();
+        this.message = authErrorType.getMessage();
         this.timestamp = LocalDateTime.now();
     }
 }

@@ -1,11 +1,8 @@
 package com.example.demo.security.jwt;
 
 import com.example.demo.auth.enums.TokenType;
-import com.example.demo.security.exception.ExpiredJwtTokenException;
-import com.example.demo.security.exception.InvalidJwtTokenException;
-import com.example.demo.security.exception.JwtAuthenticationException;
-import com.example.demo.security.exception.UnsupportedJwtException;
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,8 +19,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static com.example.demo.auth.enums.ErrorCode.*;
 
 @Slf4j
 @Component
@@ -104,23 +99,11 @@ public class JwtTokenProvider {
 
     // JWT 토큰 유효성 검증
     public boolean validateToken(String authToken, TokenType tokenType){
-        try{
-            Jwts.parserBuilder()
-                    .setSigningKey(getSigningKey(tokenType))
-                    .build()
-                    .parseClaimsJws(authToken);
-            return true;
-        }catch (MalformedJwtException ex) {
-            throw new InvalidJwtTokenException();
-        } catch (ExpiredJwtException ex) {
-            throw new ExpiredJwtTokenException();
-        } catch (UnsupportedJwtException ex) {
-            throw new UnsupportedJwtException();
-        } catch (IllegalArgumentException ex) {
-            throw new InvalidJwtTokenException();
-        } catch (JwtException ex) {
-            throw new JwtAuthenticationException();
-        }
+        Jwts.parserBuilder()
+                .setSigningKey(getSigningKey(tokenType))
+                .build()
+                .parseClaimsJws(authToken);
+        return true;
     }
 
     private SecretKey getSigningKey(TokenType tokenType) {

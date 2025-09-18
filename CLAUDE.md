@@ -24,11 +24,39 @@ Spring Boot 3.5.5 application using Java 21 with JWT authentication, Spring Secu
 # Run all tests
 ./gradlew test
 
-# Run tests with JUnit Platform
+# Run tests with detailed output
 ./gradlew test --info
+
+# Run tests continuously during development
+./gradlew test --continuous
+
+# Run a specific test class
+./gradlew test --tests "com.example.demo.DemoApplicationTests"
 ```
 
 ## Architecture & Code Structure
+
+### Package Structure
+```
+com.example.demo/
+├── auth/                    # Authentication layer
+│   ├── controllers/         # Login and auth endpoints
+│   ├── dto/                # Authentication DTOs
+│   ├── enums/              # Auth-related enums
+│   └── service/            # Authentication business logic
+├── user/                   # User domain
+│   ├── dto/                # User DTOs
+│   ├── entity/             # User entities
+│   ├── enums/              # User-related enums
+│   └── repository/         # User data access
+├── security/               # Security infrastructure
+│   ├── config/             # Security configuration
+│   ├── dto/                # Security DTOs
+│   ├── exception/          # Security exceptions
+│   ├── filter/             # JWT filters
+│   └── jwt/                # JWT token management
+└── exception/              # Global exception handling
+```
 
 ### Security Layer
 - **JWT Authentication**: Uses JJWT library (v0.11.5) for token generation/validation
@@ -36,28 +64,37 @@ Spring Boot 3.5.5 application using Java 21 with JWT authentication, Spring Secu
   - Stateless session management
   - Role-based access control (ADMIN, CUSTOMER, EMPLOYEE)
   - BCrypt password encoding
+  - Currently uses in-memory user (kunhee/12345/ADMIN) for testing
 - **Authentication Flow**:
-  - `LoginController` handles authentication endpoints
-  - `CustomUserDetailsService` integrates with database user lookup
-  - `UserRepository` interface with MyBatis implementation
+  - `LoginController` (`/login` POST) handles authentication
+  - `AuthService` manages authentication logic
+  - `JwtTokenProvider` generates access/refresh tokens
+  - `JwtAuthenticationFilter` validates tokens on requests
 
 ### Data Layer
 - **MyBatis ORM**: Spring Boot MyBatis starter (v3.0.5)
 - **Database**: MySQL with connection pooling
 - **Repository Pattern**:
-  - `UserRepository` interface in `src/main/java/com/example/demo/security/repository/`
+  - `UserRepository` interface in `src/main/java/com/example/demo/user/repository/`
   - `MyBatisUserRepository` implementation
-- **Entities**: Located in `src/main/java/com/example/demo/security/entity/`
+- **Entities**: Located in `src/main/java/com/example/demo/user/entity/`
+- **Mapper Configuration**:
+  - XML mappers expected in `src/main/resources/mapper/` (directory not yet created)
+  - Camel case conversion enabled for database column mapping
 
 ### Configuration Files
 - **Database Config**: `src/main/resources/application.properties`
   - MySQL connection: `jdbc:mysql://localhost:3306/demo_item`
-  - JWT settings: 24-hour expiration (86400000ms)
+  - Development credentials: devuser/12345
+  - JWT settings: 500000ms expiration (≈8.33 minutes)
+  - MyBatis mapper locations: `classpath:mapper/*.xml`
 - **Logging Config**: `src/main/resources/log4j2.xml`
   - Async logging with Disruptor for performance
   - File rotation (daily + 10MB size-based)
+  - Platform-specific paths (Mac/Windows) configured
   - Separate error file logging
   - Console output with color highlighting
+  - Security debugging available (commented out)
 
 ## Dependencies & Frameworks
 - **Spring Boot 3.5.5** (Web, Security, Test)

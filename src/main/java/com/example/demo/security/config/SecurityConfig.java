@@ -54,16 +54,8 @@ public class SecurityConfig {
                         .requestMatchers("/api/employee/**").hasAuthority("ROLE_EMPLOYEE")
                         .anyRequest().authenticated())
                         .addFilterAt(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
-
-
         return http.build();
     }
-
-    @Bean
-    public AuthenticationEventPublisher authenticationEventPublisher(ApplicationEventPublisher eventPublisher) {
-        return new DefaultAuthenticationEventPublisher(eventPublisher);
-    }
-
 
 //    @Bean
 //    public AuthenticationManager authenticationManager(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder) throws Exception {
