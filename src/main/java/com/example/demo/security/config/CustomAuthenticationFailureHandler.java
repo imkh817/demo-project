@@ -1,4 +1,6 @@
 package com.example.demo.security.config;
 
-public class CustomAuthenticationFailureHandler {
+import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
+
+public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {
 }

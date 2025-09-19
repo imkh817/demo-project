@@ -99,11 +99,11 @@ public class JwtTokenProvider {
 
     // JWT 토큰 유효성 검증
     public boolean validateToken(String authToken, TokenType tokenType){
-        Jwts.parserBuilder()
-                .setSigningKey(getSigningKey(tokenType))
-                .build()
-                .parseClaimsJws(authToken);
-        return true;
+            Jwts.parserBuilder()
+                    .setSigningKey(getSigningKey(tokenType))
+                    .build()
+                    .parseClaimsJws(authToken);
+            return true;
     }
 
     private SecretKey getSigningKey(TokenType tokenType) {

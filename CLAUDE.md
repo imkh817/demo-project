@@ -70,6 +70,8 @@ com.example.demo/
   - `AuthService` manages authentication logic
   - `JwtTokenProvider` generates access/refresh tokens
   - `JwtAuthenticationFilter` validates tokens on requests
+- **Authentication Events**: `AuthenticationEvents.java` handles login success/failure event logging
+- **Custom Handlers**: `CustomAuthenticationFailureHandler.java` and `CustomAccessDeniedHandler.java` for error handling
 
 ### Data Layer
 - **MyBatis ORM**: Spring Boot MyBatis starter (v3.0.5)
@@ -107,7 +109,7 @@ com.example.demo/
 ## Development Notes
 - **Java Version**: 21 with toolchain configuration
 - **Package Structure**: `com.example.demo` with security, repository, and controller subpackages
-- **Security Debugging**: Spring Security TRACE logging available in log4j2.xml (commented)
+- **Security Debugging**: Spring Security TRACE logging currently enabled in application.properties
 - **Session Management**: Stateless (no server-side sessions)
 - **CSRF**: Disabled for REST API usage
 
