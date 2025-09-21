@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - DemoApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>DemoApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.demo.html">com.example.demo</a> &gt; DemoApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.311s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.311s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-09-21T07:18:17.902975Z Test worker INFO Starting configuration XmlConfiguration[location=/Users/jogeonhui/Desktop/toy-project/demo-project/build/resources/main/log4j2.xml, lastModified=2025-09-21T06:43:58.534Z]...
+2025-09-21T07:18:17.904337Z Test worker INFO Start watching for changes to /Users/jogeonhui/Desktop/toy-project/demo-project/build/resources/main/log4j2.xml every 0 seconds
+2025-09-21T07:18:17.916834Z Test worker INFO Configuration XmlConfiguration[location=/Users/jogeonhui/Desktop/toy-project/demo-project/build/resources/main/log4j2.xml, lastModified=2025-09-21T06:43:58.534Z] started.
+2025-09-21T07:18:17.917769Z Test worker INFO Stopping configuration org.apache.logging.log4j.core.config.DefaultConfiguration@3a0d172f...
+2025-09-21T07:18:17.917974Z Test worker INFO Configuration org.apache.logging.log4j.core.config.DefaultConfiguration@3a0d172f stopped.
+2025-09-21 16:18:17.941 ?[32m[Test worker] INFO ?[m ?[36morg.springframework.test.context.support.AnnotationConfigContextLoaderUtils?[m - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-21 16:18:17.976 ?[32m[Test worker] INFO ?[m ?[36morg.springframework.boot.test.context.SpringBootTestContextBootstrapper?[m - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-09-21 16:18:18.113 ?[32m[Test worker] INFO ?[m ?[36mcom.example.demo.DemoApplicationTests?[m - Starting DemoApplicationTests using Java 21.0.7 with PID 48920 (started by jogeonhui in /Users/jogeonhui/Desktop/toy-project/demo-project)
+2025-09-21 16:18:18.114 ?[34m[Test worker] DEBUG?[m ?[36mcom.example.demo.DemoApplicationTests?[m - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-21 16:18:18.115 ?[32m[Test worker] INFO ?[m ?[36mcom.example.demo.DemoApplicationTests?[m - No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-09-21 16:18:18.349 ?[33m[Test worker] WARN ?[m ?[36morg.mybatis.spring.mapper.ClassPathMapperScanner?[m - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-09-21 16:18:18.434 ?[35m[Test worker] TRACE?[m ?[36morg.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer?[m - Eagerly initializing {securityConfig=com.example.demo.security.config.SecurityConfig$$SpringCGLIB$$0@23e61112}
+2025-09-21 16:18:18.507 ?[32m[Test worker] INFO ?[m ?[36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer?[m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-09-21 16:18:18.600 ?[34m[Test worker] DEBUG?[m ?[36morg.springframework.security.web.DefaultSecurityFilterChain?[m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtExceptionHandlerFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-21 16:18:18.603 ?[33m[Test worker] WARN ?[m ?[36morg.springframework.security.config.annotation.web.builders.WebSecurity$IgnoredRequestConfigurer?[m - One of the patterns in [org.springframework.boot.autoconfigure.security.reactive.StaticResourceRequest$StaticResourceServerWebExchange@46ab4efc] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-09-21 16:18:18.603 ?[33m[Test worker] WARN ?[m ?[36morg.springframework.security.config.annotation.web.builders.WebSecurity?[m - You are asking Spring Security to ignore Deferred [Mvc [pattern='org.springframework.boot.autoconfigure.security.reactive.StaticResourceRequest$StaticResourceServerWebExchange@46ab4efc'], Ant [pattern='org.springframework.boot.autoconfigure.security.reactive.StaticResourceRequest$StaticResourceServerWebExchange@46ab4efc']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-21 16:18:18.603 ?[34m[Test worker] DEBUG?[m ?[36morg.springframework.security.web.DefaultSecurityFilterChain?[m - Will not secure Deferred [Mvc [pattern='org.springframework.boot.autoconfigure.security.reactive.StaticResourceRequest$StaticResourceServerWebExchange@46ab4efc'], Ant [pattern='org.springframework.boot.autoconfigure.security.reactive.StaticResourceRequest$StaticResourceServerWebExchange@46ab4efc']]
+2025-09-21 16:18:18.722 ?[32m[Test worker] INFO ?[m ?[36mcom.example.demo.DemoApplicationTests?[m - Started DemoApplicationTests in 0.705 seconds (process running for 1.236)
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/jogeonhui/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.7/fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da/byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 2025. 9. 21. 오후 4:18:19</p>
+</div>
+</div>
+</body>
+</html>

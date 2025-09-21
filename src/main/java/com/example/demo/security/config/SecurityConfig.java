@@ -1,6 +1,7 @@
 package com.example.demo.security.config;
 
 import com.example.demo.security.filter.JwtAuthenticationFilter;
+import com.example.demo.security.filter.JwtExceptionHandlerFilter;
 import com.example.demo.security.jwt.JwtTokenProvider;
 import com.example.demo.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -45,7 +46,7 @@ public class SecurityConfig {
                 .httpBasic(basic -> basic.disable())
                 .sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .exceptionHandling(exception -> exception
-                        //.authenticationEntryPoint(new CustomAuthenticationEntryPoint())
+//                        //.authenticationEntryPoint(new CustomAuthenticationEntryPoint()))
                         .accessDeniedHandler(new CustomAccessDeniedHandler()))
                 .authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/login").permitAll()
@@ -53,7 +54,9 @@ public class SecurityConfig {
                         .requestMatchers("/api/customer/**").hasAuthority("ROLE_CUSTOMER")
                         .requestMatchers("/api/employee/**").hasAuthority("ROLE_EMPLOYEE")
                         .anyRequest().authenticated())
-                        .addFilterAt(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(new JwtExceptionHandlerFilter(), UsernamePasswordAuthenticationFilter.class)
+                .addFilterAt(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
+
         return http.build();
     }
 

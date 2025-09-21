@@ -25,6 +25,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import static com.example.demo.auth.enums.TokenType.*;
+import static org.springframework.http.HttpHeaders.*;
+
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
@@ -37,59 +40,30 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             filterChain.doFilter(request, response);
             return;
         }
+        String token = extractJwtToken(request);
 
-        try{
-            String token = extractJwtToken(request);
+        if(isValidToken(token)){
+            String username = tokenProvider.getUsernameFromJWT(token, ACCESS);
+            List<SimpleGrantedAuthority> authorities = tokenProvider.getAuthoritiesFromJWT(token, ACCESS);
 
-            if(isValidToken(token)){
-                String username = tokenProvider.getUsernameFromJWT(token, TokenType.ACCESS);
-                List<SimpleGrantedAuthority> authorities = tokenProvider.getAuthoritiesFromJWT(token, TokenType.ACCESS);
-
-                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(username, null, authorities);
-                SecurityContextHolder.getContext().setAuthentication(authentication);
-            }
-             filterChain.doFilter(request,response);
-        } catch (MalformedJwtException e) {
-            handleJwtException(response, JwtErrorType.INVALID_TOKEN.name(), JwtErrorType.INVALID_TOKEN.getMessage());
-        }catch (ExpiredJwtException e){
-            handleJwtException(response, JwtErrorType.EXPIRED_TOKEN.name(), JwtErrorType.EXPIRED_TOKEN.getMessage());
+            UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(username, null, authorities);
+            SecurityContextHolder.getContext().setAuthentication(authentication);
         }
-        catch (UnsupportedJwtException e) {
-            handleJwtException(response, JwtErrorType.UNSUPPORTED_TOKEN.name(), JwtErrorType.UNSUPPORTED_TOKEN.getMessage());
-        } catch (IllegalArgumentException e) {
-            handleJwtException(response, JwtErrorType.ILLEGAL_TOKEN.name(), JwtErrorType.ILLEGAL_TOKEN.getMessage());
-        } catch (SignatureException e) {
-            handleJwtException(response, JwtErrorType.SIGNATURE_MISMATCH.name(), JwtErrorType.SIGNATURE_MISMATCH.getMessage());
-        }
+         filterChain.doFilter(request,response);
     }
 
     private String extractJwtToken(HttpServletRequest request){
-        return Optional.of(request.getHeader(HttpHeaders.AUTHORIZATION))
+        return Optional.of(request.getHeader(AUTHORIZATION))
                 .filter(token -> token.length() >= 7 && token.substring(0,7).equalsIgnoreCase("Bearer "))
                 .map(token -> token.substring(7))
                 .orElse(null);
     }
 
     private boolean isValidToken(String token){
-        if(StringUtils.hasText(token) && tokenProvider.validateToken(token, TokenType.ACCESS)){
+        if(StringUtils.hasText(token) && tokenProvider.validateToken(token, ACCESS)){
             return true;
         }
         return false;
     }
-
-    private void handleJwtException(HttpServletResponse response, String errorCode, String message) throws IOException {
-        response.setStatus(HttpStatus.UNAUTHORIZED.value());
-        response.setContentType("application/json;charset=UTF-8");
-        response.getWriter().write(String.format(
-                """
-                        {
-                            "success": false,
-                            "error": "%s",
-                            "message": "%s",
-                            "timestamp": "%s"
-                        }
-                        """, errorCode, message, LocalDateTime.now()));
-    }
-
 
 }
