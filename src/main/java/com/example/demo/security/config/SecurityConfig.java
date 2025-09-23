@@ -78,15 +78,15 @@ public class SecurityConfig {
         return configuration.getAuthenticationManager();
     }
 
-    @Bean
-    public UserDetailsService userDetailsService() {
-        UserDetails user = User.withUsername("kunhee")
-                .password(passwordEncoder().encode("12345"))
-                .authorities("ROLE_ADMIN")
-                .build();
-        return new InMemoryUserDetailsManager(user);
-        //return new CustomUserDetailsService(userRepository);
-    }
+//    @Bean
+//    public UserDetailsService userDetailsService() {
+//        UserDetails user = User.withUsername("kunhee")
+//                .password(passwordEncoder().encode("12345"))
+//                .authorities("ROLE_ADMIN")
+//                .build();
+//        return new InMemoryUserDetailsManager(user);
+//        //return new CustomUserDetailsService(userRepository);
+//    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
