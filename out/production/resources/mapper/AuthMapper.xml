@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.auth.repository.AuthMapper">
+
+    <insert id="join" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO users (
+            LOGIN_ID,
+            PASSWORD,
+            NAME,
+            BIRTH_DATE,
+            ACCOUNT_NON_LOCKED,
+            ROLE_TYPE,
+            CREATED_AT,
+            UPDATED_AT,
+            DELETED
+        ) VALUES (
+            #{loginId},
+            #{password},
+            #{name},
+            #{birthDate},
+            #{accountNonLocked},
+            #{roleType},
+            NOW(),
+            NOW(),
+            #{deleted}
+        )
+    </insert>
+    
+    <select id="existsByUserId" parameterType="java.lang.String" resultType="User">
+        SELECT
+            *
+        FROM USERS
+        WHERE USER_ID = #{userId}
+    </select>
+
+</mapper>

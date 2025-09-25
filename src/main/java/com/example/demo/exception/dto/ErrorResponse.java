@@ -1,15 +1,16 @@
 package com.example.demo.exception.dto;
 
-import com.example.demo.auth.enums.AuthErrorType;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+@Builder
+@Getter
 @AllArgsConstructor
-@Getter @Setter
-public class ErrorResponseDto {
+public class ErrorResponse {
     private int status;
     private String error;
     private String message;

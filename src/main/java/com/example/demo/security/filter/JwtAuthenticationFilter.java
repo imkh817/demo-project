@@ -32,14 +32,16 @@ import static org.springframework.http.HttpHeaders.*;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtTokenProvider tokenProvider;
+    private static final List<String> WHITE_LIST = List.of("/auth/join", "/auth/login");
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        // 로그인 경로는 JWT 검증 제외
-        if ("/login".equals(request.getRequestURI())) {
+
+        if(WHITE_LIST.contains(request.getRequestURI())) {
             filterChain.doFilter(request, response);
             return;
         }
+
         String token = extractJwtToken(request);
 
         if(isValidToken(token)){

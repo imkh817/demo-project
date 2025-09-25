@@ -1,6 +1,5 @@
 package com.example.demo.auth.dto;
 
-import com.example.demo.auth.vo.FailRegisterUser;
 import com.example.demo.user.entity.UserEntity;
 import lombok.Builder;
 import lombok.Getter;

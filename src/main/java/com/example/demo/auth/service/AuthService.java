@@ -8,7 +8,6 @@ import com.example.demo.auth.repository.AuthRepository;
 import com.example.demo.security.jwt.JwtTokenProvider;
 import com.example.demo.user.entity.UserEntity;
 import com.example.demo.user.enums.RoleType;
-import com.example.demo.user.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -25,7 +24,6 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider jwtTokenProvider;
     private final AuthRepository authRepository;
-    private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
 
     public LoginResponseDto authenticate(LoginRequestDto loginRequestDto) {
